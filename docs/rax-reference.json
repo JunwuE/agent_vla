@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/robot-agent-exploration/rax",
+  "branch": "robodojo-behavior/native",
+  "commit": "16e75db0d0258a4870935d0c4b2402ab618db11d",
+  "files": {
+    "agent_skills/auto-research/autonomous-control/SKILL.md": "20e38736baeada5ff67d6d1927499bc9c1126d5bf72a0495347e918d7300542a",
+    "agent_skills/task/experience-memory/SKILL.md": "10535b7f86ace395fba459361cd629a5f81f11f669554f9feda2b844ef0a66c0",
+    "agent_skills/task/experience-memory/references/format.md": "1a649feae8874f8f7d99542275483a16c43199d36c0b7a67dd67ae9b44e9c6f9",
+    "services/controller/storage.py": "1d7e9dbc7c980c2ad02e9c29a8b534306b348e9a8cc5632124e2943ee72c459c",
+    "services/controller/supervisor.py": "5c05783796b08ae27045f005bfbe4287b0678dae813fcef6dc2c096ad7971d71",
+    "agent_skills/control/robodojo/action-search/SKILL.md": "5af8d4e86f4e972775dc06b9db2cbf1c3dd06bfc5c675800d44871dc60a6c940"
+  },
+  "integration": "Workflow reference only; not a runtime dependency."
+}

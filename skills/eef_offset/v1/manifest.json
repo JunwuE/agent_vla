@@ -1,0 +1,85 @@
+{
+  "id": "eef_offset",
+  "version": "v1",
+  "sha256": "51537f54b59cb8b3e7da56d90930a9b1fc0378795cb1afb6fcf2245f5f5c9c68",
+  "robot": "PandaOmron",
+  "status": "template",
+  "description": "Bounded relative EEF translation or rotation from current measured OSC site pose.",
+  "preconditions": [],
+  "completion_condition": null,
+  "required_capabilities": [
+    "osc_eef"
+  ],
+  "parameter_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "delta_position": {
+        "maxItems": 3,
+        "minItems": 3,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "title": "Delta Position",
+        "type": "array"
+      },
+      "delta_rotation_vector": {
+        "default": [
+          0,
+          0,
+          0
+        ],
+        "maxItems": 3,
+        "minItems": 3,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "title": "Delta Rotation Vector",
+        "type": "array"
+      },
+      "gripper_closed": {
+        "title": "Gripper Closed",
+        "type": "boolean"
+      },
+      "steps": {
+        "default": 1,
+        "maximum": 5,
+        "minimum": 1,
+        "title": "Steps",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "delta_position",
+      "gripper_closed"
+    ],
+    "title": "RelativeRequest",
+    "type": "object"
+  },
+  "parameter_sources": [
+    "current measured OSC site pose",
+    "planner task evidence"
+  ],
+  "known_failures": [
+    "No collision or IK feasibility guarantee",
+    "Tracking does not establish object interaction success",
+    "Requires a separately installed completion verifier"
+  ],
+  "evidence": [],
+  "layout": null
+}

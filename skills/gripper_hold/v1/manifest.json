@@ -1,0 +1,46 @@
+{
+  "id": "gripper_hold",
+  "version": "v1",
+  "sha256": "c4c7f2686bc561ca05808131ef4b31c9cff5824ff782c967173aa7d99c7ad238",
+  "robot": "PandaOmron",
+  "status": "template",
+  "description": "Open or close gripper while holding measured EEF pose.",
+  "preconditions": [],
+  "completion_condition": null,
+  "required_capabilities": [
+    "osc_eef",
+    "gripper"
+  ],
+  "parameter_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "closed": {
+        "title": "Closed",
+        "type": "boolean"
+      },
+      "steps": {
+        "default": 1,
+        "maximum": 5,
+        "minimum": 1,
+        "title": "Steps",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "closed"
+    ],
+    "title": "GripperRequest",
+    "type": "object"
+  },
+  "parameter_sources": [
+    "current measured OSC site pose",
+    "planner task evidence"
+  ],
+  "known_failures": [
+    "No collision or IK feasibility guarantee",
+    "Tracking does not establish object interaction success",
+    "Requires a separately installed completion verifier"
+  ],
+  "evidence": [],
+  "layout": null
+}

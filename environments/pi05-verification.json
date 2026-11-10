@@ -1,0 +1,33 @@
+{
+  "versions": {
+    "jax": "0.5.3",
+    "jaxlib": "0.5.3",
+    "flax": "0.10.2",
+    "torch": "2.7.1",
+    "transformers": "4.53.2",
+    "numpy": "1.26.4",
+    "lerobot": "0.3.3",
+    "openpi": "0.1.0",
+    "openpi-client": "0.1.0"
+  },
+  "jax_devices": [
+    "cuda:0"
+  ],
+  "torch_cuda": true,
+  "pretrained_weights_loaded": false,
+  "robocasa_installed": false,
+  "jax_matmul": 8.0,
+  "torch_matmul": 8.0,
+  "robocasa_transforms": "three RGB cameras, state16->32, action32->12",
+  "random_model_smoke": {
+    "shape": [
+      1,
+      2,
+      32
+    ],
+    "finite": true,
+    "seconds": 48.845343137159944,
+    "denoising_steps": 1,
+    "trained": false
+  }
+}

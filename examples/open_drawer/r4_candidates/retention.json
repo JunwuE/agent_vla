@@ -1,0 +1,20 @@
+{
+  "task": "OpenDrawer",
+  "cases": [
+    "OpenDrawer-seed04",
+    "OpenDrawer-seed06",
+    "OpenDrawer-seed07",
+    "OpenDrawer-seed08",
+    "OpenDrawer-seed16"
+  ],
+  "new_skill_versions": 2,
+  "skill_identities": 1,
+  "new_status_counts": {
+    "candidate": 2
+  },
+  "new_experiences": 5,
+  "initial_memory_sha256": "888c59d88a248399cea8f3fdd2a328f0d275b0ed83927cff4e9294a08b51011b",
+  "default_library_changed": false,
+  "tested_with_merged_memory": false,
+  "guidance": "Retained candidates, not independently validated reusable skills. Per-seed task-memory proposals, if any, remain in original inputs directories."
+}

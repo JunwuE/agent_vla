@@ -1,0 +1,3 @@
+# Optional single-GPU development variant; BF16 remains the default.
+-r flora-requirements.txt
+bitsandbytes==0.48.1

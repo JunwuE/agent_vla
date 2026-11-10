@@ -1,0 +1,7 @@
+# Verified H100 stack: CPython 3.11, Linux x86_64, torch 2.7.1 / CUDA 12.6.
+# Official upstream wheel, selected for CUDA 12, torch 2.7 and CXX11 ABI=true.
+flash-linear-attention[cuda]==0.6.0
+fla-core==0.6.0
+einops==0.8.2
+triton==3.3.1
+causal-conv1d @ https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.7.0/causal_conv1d-1.7.0%2Bcu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl#sha256=6d04c5b9c675dd68aa4ece694d3c5d1d79b25326757bae567aeb2edfe1dd5cc2

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VLA Agent · 执行回放</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0d131e;color:#edf2fa;font:15px/1.6 system-ui,sans-serif}
+header{padding:28px 32px 20px;border-bottom:1px solid #283449;background:#111b29}
+.eyebrow{font-size:12px;letter-spacing:.15em;color:#71d9cb}h1{font-size:26px;margin:6px 0 10px}p{margin:8px 0;color:#b3c2d7}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.badge{border:1px solid #41556e;border-radius:5px;padding:2px 9px;font-size:12px}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(100px,1fr));gap:12px;margin-top:20px}
+.metric{background:#182437;border:1px solid #2b3d55;border-radius:8px;padding:12px 16px}.metric b{font-size:23px;display:block}.metric span{color:#a6b8cd;font-size:12px}
+main{padding:24px 32px;display:grid;grid-template-columns:minmax(0,1fr) 370px;gap:22px;max-width:1800px;margin:auto}
+video{display:block;width:100%;background:#000;border:1px solid #2a3b52;border-radius:9px}
+button,select,input{font:inherit;color:inherit;background:#1b2a40;border:1px solid #40516b;border-radius:5px;padding:6px 10px}
+button{cursor:pointer}button:hover{background:#2a415d}button:focus-visible,a:focus-visible{outline:2px solid #71d9cb}
+.controls{margin:12px 0}.small{font-size:12px;color:#a8bad0}.legend{gap:16px;margin:16px 0 6px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+#timeline{height:24px;display:flex;overflow:hidden;border-radius:4px;margin:8px 0}#timeline button{padding:0;border:0;border-radius:0;min-width:0;opacity:.8}#timeline button:hover{opacity:1;filter:brightness(1.3)}
+.panel{border:1px solid #2a3c55;border-radius:9px;background:#141f2f;padding:18px;margin-bottom:16px}.panel h2{margin:0 0 12px;font-size:16px}
+#phase{font-size:21px;color:#71d9cb;margin:4px 0}#tool{font:14px ui-monospace,monospace;overflow-wrap:anywhere}
+dl{display:grid;grid-template-columns:100px 1fr;gap:8px;margin:14px 0;font-size:13px}dt{color:#92a9c2}dd{margin:0;overflow-wrap:anywhere}
+pre{font-size:12px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;max-height:340px;overflow:auto;background:#0c1421;padding:12px;border-radius:5px}
+#events{height:440px;overflow:auto;margin-top:12px}#events button{width:100%;text-align:left;display:block;margin-bottom:6px;background:#111c2c;padding:9px 11px}
+#events button.active{border-color:#71d9cb;background:#1b3441}.event-title{font-size:12px;overflow-wrap:anywhere}.event-time{font-size:11px;color:#91a7c1}
+a{color:#81cfef}.note{border-left:3px solid #f6c760;padding:3px 12px;margin:18px 0}.result-good{color:#9cdb8c}.result-bad{color:#f6c760}
+@media(max-width:1100px){main{grid-template-columns:1fr;padding:16px}header{padding:20px}aside{display:grid;grid-template-columns:1fr 1fr;gap:14px}}@media(max-width:650px){aside{display:block}.metrics{grid-template-columns:1fr 1fr}h1{font-size:20px}}
+</style>
+<header>
+<div class="eyebrow">VLA AGENT / RECORDED EXECUTION</div>
+<h1 id="title"></h1>
+<div class="row"><span class="badge" id="mode"></span><span class="badge" id="seed"></span><span class="badge" id="outcome"></span><span class="small">真实 RoboCasa · 三视角 · 可追溯事件</span></div>
+<p id="instruction"></p>
+<div class="metrics"><div class="metric"><b id="steps"></b><span>实际控制步</span></div><div class="metric"><b id="checks"></b><span>Decision 检查</span></div><div class="metric"><b id="turns"></b><span>Astra turns</span></div><div class="metric"><b id="wall"></b><span>运行耗时 / 秒</span></div></div>
+</header>
+<main>
+<section>
+<video id="video" poster="poster.jpg" controls preload="auto"></video>
+<div class="row controls"><button id="prev">上一事件</button><button id="next">下一事件</button><label>播放速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><span class="small" id="clock"></span></div>
+<div class="row legend" id="legend"></div><div id="timeline" aria-label="点击阶段跳转"></div>
+<p class="small">点击时间线或右侧事件跳转。动作保持 20 Hz；推理和工具等待被压缩，原始墙钟时间仍显示。阶段名称来自运行日志，不代表已验证的抓取或子任务完成。</p>
+<div class="panel"><h2>当前事件</h2><div id="phase"></div><div id="tool"></div><p id="description"></p><dl><dt>执行位置</dt><dd id="position"></dd><dt>控制权持有者</dt><dd id="owner"></dd><dt>最近动作来源</dt><dd id="source"></dd><dt>最近 Decision</dt><dd id="decision"></dd><dt>当前子任务</dt><dd id="subtask"></dd><dt>生效指导</dt><dd id="guidance"></dd></dl></div>
+<div class="note small" id="boundary"></div>
+<p class="small">文件：<a href="replay.mp4" download>下载标注视频</a> · <a href="timeline.json">完整时间线与事件证据</a> · <a href="video-check.json">视频帧数核验</a></p>
+</section>
+<aside>
+<div class="panel"><h2>阶段与工具事件</h2><input id="search" aria-label="搜索工具或阶段" placeholder="搜索 tool / 阶段" style="width:100%"><label class="small"><input id="major" type="checkbox" checked> 隐藏逐帧执行与重复 VLA 推理</label><div id="events"></div></div>
+<div class="panel"><h2>原始事件 #<span id="eventid"></span></h2><p class="small">模型提案、工具返回和实际执行分开记录。接受提案不等于动作已执行。</p><pre id="details"></pre><details><summary class="small">来源与回放信息</summary><pre id="provenance"></pre></details></div>
+</aside>
+</main>
+<script>
+const REPORT=__REPORT_JSON__;
+const $=id=>document.getElementById(id),S=REPORT.summary,C=REPORT.timeline,V=$('video');
+const colors={'VLA':'#4fd1c5','Harness':'#6cb6ff','Decision':'#f6c760','Astra':'#c6a0ff','Code Policy':'#f69873','Verification':'#9cdb8c','Runtime':'#aab8cc'};
+const text=(id,value)=>{$(id).textContent=value};let current=0,visible=[],pendingSeek=null;
+text('title',S.task);document.title=S.task+' · VLA Agent 回放';text('mode',S.mode==='baseline'?'纯 VLA 基线':S.mode==='low_calls'?'低调用监督':'原始监督流程');text('seed','seed '+S.seed);
+text('outcome',(S.result.success?'任务成功':'未完成')+' · '+S.result.reason);$('outcome').className+=' '+(S.result.success?'result-good':'result-bad');
+text('instruction',S.instruction);text('steps',S.result.control_steps);text('checks',S.result.decision_checks);text('turns',S.result.astra_calls);text('wall',S.result.wall_seconds.toFixed(1));
+text('boundary',S.mode==='baseline'?'本条是纯 VLA 基线：没有调用 Decision、Astra 或 Code Policy。画面中的推理与动作标记来自实际系统接口事件。':'本条显示实际发生的监督和工具调用。没有执行的恢复方式不会补画；代码恢复或子任务切换是否发生，以原始事件为准。');
+text('provenance',JSON.stringify({source:S.source,checkpoint:S.checkpoint,event_hash:REPORT.source_events_sha256,timing:REPORT.timing},null,2));
+for(const [name,color] of Object.entries(colors)){const el=document.createElement('span');const dot=document.createElement('i');dot.className='dot';dot.style.background=color;el.append(dot,document.createTextNode(name));$('legend').append(el)}
+function seek(i){if(V.readyState<2||!V.seekable.length||V.seekable.end(V.seekable.length-1)<=0){pendingSeek=i;update(i);return}pendingSeek=null;V.currentTime=C[i].video_start+Math.min(0.05,(C[i].video_end-C[i].video_start)/2);update(i)}
+function update(i){current=i;const c=C[i];text('phase',c.phase);$('phase').style.color=colors[c.component];text('tool',c.component+' · '+c.tool);text('description',c.description);text('position','step '+c.step+' / 仿真 '+c.sim_seconds.toFixed(2)+'s / 墙钟 '+c.wall_seconds.toFixed(1)+'s');text('owner',c.owner);text('source',c.action_source);text('decision',c.decision);text('subtask',c.subtask);text('guidance',c.instruction);text('eventid',c.event_id);text('details',JSON.stringify(c.details,null,2));text('clock','视频 '+V.currentTime.toFixed(1)+'s / '+C.at(-1).video_end.toFixed(1)+'s');for(const b of $('events').children)b.classList.toggle('active',Number(b.dataset.index)===i)}
+function locate(t){let a=0,b=C.length-1;while(a<b){let m=Math.ceil((a+b)/2);if(C[m].video_start<=t)a=m;else b=m-1}return a}
+V.addEventListener('loadeddata',()=>{if(pendingSeek!==null)seek(pendingSeek)});V.addEventListener('timeupdate',()=>{if(pendingSeek===null)update(locate(V.currentTime))});$('speed').onchange=()=>{V.playbackRate=Number($('speed').value)};
+// Simple static servers may omit byte-range support. A local Blob makes event seeking work there too.
+if(location.protocol==='http:'||location.protocol==='https:'){
+  (async()=>{try{const head=await fetch('replay.mp4',{method:'HEAD'});if(!head.ok||head.headers.get('accept-ranges')==='bytes'){V.src='replay.mp4';return}const response=await fetch('replay.mp4');if(!response.ok)throw Error('video load failed');const url=URL.createObjectURL(await response.blob());V.src=url;addEventListener('pagehide',()=>URL.revokeObjectURL(url),{once:true})}catch{V.src='replay.mp4'}})();
+}else{V.src='replay.mp4'}
+function list(){const q=$('search').value.toLowerCase();visible=[];$('events').replaceChildren();C.forEach((c,i)=>{if($('major').checked&&['observation','vla_inference_start'].includes(c.kind))return;if(q&&!`${c.tool} ${c.phase} ${c.description}`.toLowerCase().includes(q))return;visible.push(i);const b=document.createElement('button');b.dataset.index=i;b.onclick=()=>seek(i);const title=document.createElement('div');title.className='event-title';title.textContent=c.component+' / '+c.tool;title.style.color=colors[c.component];const stamp=document.createElement('div');stamp.className='event-time';stamp.textContent='#'+c.event_id+' · step '+c.step+' · video '+c.video_start.toFixed(1)+'s';b.append(title,stamp);$('events').append(b)});update(current)}
+$('search').oninput=list;$('major').onchange=list;$('prev').onclick=()=>seek([...visible].reverse().find(i=>i<current)??0);$('next').onclick=()=>seek(visible.find(i=>i>current)??C.length-1);
+C.forEach((c,i)=>{const b=document.createElement('button');b.style.flex=String(c.duration_frames);b.style.background=colors[c.component];b.title=c.phase+' / '+c.tool+' / step '+c.step;b.setAttribute('aria-label',b.title);b.onclick=()=>seek(i);$('timeline').append(b)});list();
+</script>
+</html>

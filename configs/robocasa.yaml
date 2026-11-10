@@ -1,0 +1,77 @@
+# Local cjy simulation + the user's committed OmniSF atomic checkpoint.
+environment:
+  kind: robocasa
+  source_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robocasa365
+  robosuite_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robosuite365
+  python: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/bin/python
+  library_path: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/lib
+  extra_python_paths:
+    - /share/project/robot-rfm/robot-exp/usr/cjy/simulation_tools
+  renderer: osmesa
+  rpc_timeout_seconds: 180
+  task_name: PickPlaceToasterToCounter
+  instruction_source: environment  # Read the actual episode language; do not infer it from the class name.
+  scene_split: target
+  task_group: atomic_seen
+  seed: 7
+  enable_depth: false  # Enable after RGB/depth alignment is verified on the simulator host.
+vla:
+  kind: pi05
+  endpoint: ws://127.0.0.1:8010
+  openpi_path: /home/junwue/code/omnisf
+  python: /home/junwue/envs/pi05/bin/python
+  checkpoint: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999
+  norm_stats: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999/assets/robocasa365_target_atomic/norm_stats.json
+  normalization: quantile
+  training_config: robocasa365_target_atomic
+  state_layout: base_first
+  action_layout: base_first
+  binary_encoding: signed
+  clip_actions: true
+  image_size: 256
+  expected_contract: vla-agent.omnisf.mobile12.v1
+  timeout_seconds: 120
+decision:
+  kind: decision3
+  model: vllm-sr/d3-flash
+  revision: 13dc1cc8ef23caefa765907e1d764751e5629f7d
+  endpoint: http://127.0.0.1:8020/v1/systemone
+  window_frames: 5
+  primary_camera: null  # All three views at each selected historical time.
+  history_cameras: [left, right, wrist]
+  context_mode: compact  # Bounded rounded summaries; full-precision history stays in Recorder.
+  interval_steps: 5
+  max_unreviewed_steps: 5
+  timeout_seconds: 20
+  max_age_seconds: 30
+flora:
+  enabled: false  # Enable after allocating a GPU and starting the optional Flora service.
+  endpoint: http://127.0.0.1:8030/v1/outcome
+  cameras: [left, wrist]
+  max_calls: 6
+  timeout_seconds: 30
+planner:
+  kind: codex
+  codex_command: /home/junwue/tools/bin/codex
+  model: gpt-6-astra
+  reasoning_effort: high
+  timeout_seconds: 300
+  max_calls: 30
+runtime:
+  nonblocking_review: true  # Decision/Astra inspection does not acquire action control.
+  max_reviews: 20
+  review_max_age_steps: 100
+  review_max_age_seconds: 120
+  initial_planning: true
+  max_steps: 3000
+  max_wall_seconds: 1800
+  chunk_steps: 5
+  memory_mode: frozen
+  skill_library: skills
+task:
+  instruction: Place the toasted item on a plate.
+  robot: PandaOmron
+  subtasks:
+    - name: task
+      instruction: Place the toasted item on a plate.
+      completion_condition: task_success

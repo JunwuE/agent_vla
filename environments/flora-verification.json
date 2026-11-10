@@ -1,0 +1,99 @@
+{
+  "verified_at": "2026-10-29T10:18:31.472224+00:00",
+  "model": "nvidia/Flora-Rewarder",
+  "revision": "031299e46e452fc0cedb4e0975eb9fa95fc37783",
+  "environment": "/home/junwue/envs/flora",
+  "backend": "transformers",
+  "dtype": "bfloat16",
+  "gpu": "H100 80GB",
+  "tests_passed": 107,
+  "real_model_replay": true,
+  "whole_stack_with_flora_tested": false,
+  "robot_actions_executed": 0,
+  "astra_calls": 0,
+  "service_stopped_after_verification": true,
+  "enabled_by_default": false,
+  "report": "runs/flora-tool-20261029/README.md",
+  "source_sha256": {
+    "src/vla_agent/flora.py": "1810ae5dce7136e47ea78c248222392c4adbffe989fef117bb3399b2baff8029",
+    "scripts/serve_flora.py": "4897dec6cd231b9b5d18dd15db982ceceea6db2929feab4c6afc758b6527a50c",
+    "scripts/setup_flora.sh": "25b8c50b4f839a825749d197d377a4756781ffd2fb23c9cbb7bbe7cae9d22811",
+    "scripts/replay_flora.py": "f50f8cc2e6a658e5a54a0a01ce433dcea42a98ff1ac92bf55a476bd93100e740"
+  },
+  "checks": [
+    {
+      "step": 50,
+      "score": 2,
+      "tool_seconds": 1.5424485821276903,
+      "cache_verified": true
+    },
+    {
+      "step": 402,
+      "score": 4,
+      "tool_seconds": 6.131546520628035,
+      "cache_verified": true
+    }
+  ],
+  "warm_http": [
+    {
+      "request_id": "345012c9b633cd84cc09d25f8cd19b88fbaf6c636df8f43aa145e85fb569d2ec",
+      "model": "nvidia/Flora-Rewarder",
+      "revision": "031299e46e452fc0cedb4e0975eb9fa95fc37783",
+      "score": 2,
+      "raw_output": "Score: 2",
+      "input_tokens": 1753,
+      "sampled_frames": 24,
+      "seconds": 0.5754336286336184,
+      "backend": "transformers",
+      "with_rationale": false,
+      "http_seconds": 0.7054830631241202,
+      "end_step": 50,
+      "repeat": 0
+    },
+    {
+      "request_id": "80fbbc9a0bfcd53339d5b35fb64a0446b04873aef7b0cc2b7d3769320fce6d09",
+      "model": "nvidia/Flora-Rewarder",
+      "revision": "031299e46e452fc0cedb4e0975eb9fa95fc37783",
+      "score": 4,
+      "raw_output": "Score: 4",
+      "input_tokens": 4489,
+      "sampled_frames": 64,
+      "seconds": 0.9793900428339839,
+      "backend": "transformers",
+      "with_rationale": false,
+      "http_seconds": 1.2789860190823674,
+      "end_step": 402,
+      "repeat": 0
+    },
+    {
+      "request_id": "345012c9b633cd84cc09d25f8cd19b88fbaf6c636df8f43aa145e85fb569d2ec",
+      "model": "nvidia/Flora-Rewarder",
+      "revision": "031299e46e452fc0cedb4e0975eb9fa95fc37783",
+      "score": 2,
+      "raw_output": "Score: 2",
+      "input_tokens": 1753,
+      "sampled_frames": 24,
+      "seconds": 0.6448149252682924,
+      "backend": "transformers",
+      "with_rationale": false,
+      "http_seconds": 0.7665344811975956,
+      "end_step": 50,
+      "repeat": 1
+    },
+    {
+      "request_id": "80fbbc9a0bfcd53339d5b35fb64a0446b04873aef7b0cc2b7d3769320fce6d09",
+      "model": "nvidia/Flora-Rewarder",
+      "revision": "031299e46e452fc0cedb4e0975eb9fa95fc37783",
+      "score": 4,
+      "raw_output": "Score: 4",
+      "input_tokens": 4489,
+      "sampled_frames": 64,
+      "seconds": 0.97524902690202,
+      "backend": "transformers",
+      "with_rationale": false,
+      "http_seconds": 1.276880756020546,
+      "end_step": 402,
+      "repeat": 1
+    }
+  ]
+}

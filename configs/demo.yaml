@@ -1,0 +1,28 @@
+environment:
+  kind: mock
+  seed: 7
+vla:
+  kind: mock
+decision:
+  kind: mock
+  interval_steps: 3
+  max_unreviewed_steps: 2
+planner:
+  kind: mock
+runtime:
+  max_steps: 60
+  max_wall_seconds: 60
+  chunk_steps: 3
+  recovery_seconds: 10
+  skill_library: skills
+  memory_mode: frozen
+task:
+  instruction: Pick up the cup and place it to the right.
+  robot: mock_panda
+  subtasks:
+    - name: pick
+      instruction: Pick up the cup.
+      completion_condition: object_lifted
+    - name: place
+      instruction: Place the cup to the right.
+      completion_condition: object_placed

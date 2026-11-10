@@ -1,0 +1,183 @@
+{
+  "date_utc": "2026-10-28",
+  "purpose": "Integration verification, not a task benchmark",
+  "environments": {
+    "agent": "/home/junwue/code/vla_agent/.venv/bin/python",
+    "pi05": "/home/junwue/envs/pi05/bin/python",
+    "decision3": "/home/junwue/envs/decision3/bin/python",
+    "simulation": "/share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/bin/python"
+  },
+  "source_repositories": {
+    "omnisf": {
+      "path": "/home/junwue/code/omnisf",
+      "head": "2fc1b9c656c471b7526d786eae66b667130a0ac6",
+      "has_tracked_modifications": true
+    },
+    "robocasa": {
+      "path": "/share/project/robot-rfm/robot-exp/usr/cjy/simulation/robocasa365",
+      "head": "a07e365c958c4216cd6bbd5f30b47f09a65c6f00",
+      "has_tracked_modifications": false
+    },
+    "robosuite": {
+      "path": "/share/project/robot-rfm/robot-exp/usr/cjy/simulation/robosuite365",
+      "head": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "has_tracked_modifications": false
+    }
+  },
+  "vla": {
+    "checkpoint": "/share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999",
+    "norm_stats": "/share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999/assets/robocasa365_target_atomic/norm_stats.json",
+    "norm_sha256": "2d4c74ff56377ea3e79223dcf7b223913126f0bc332f8f6936a09550687fccaa",
+    "warmup_shape": [
+      50,
+      12
+    ],
+    "service_metadata": {
+      "model": "pi05",
+      "checkpoint": "/share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999",
+      "model_source": "/home/junwue/code/omnisf",
+      "contract": "vla-agent.omnisf.mobile12.v1",
+      "training_config": "robocasa365_target_atomic",
+      "action_layout": "base_first",
+      "state_layout": "base_first",
+      "binary_encoding": "signed",
+      "image_size": 256,
+      "normalization": "quantile",
+      "norm_sha256": "2d4c74ff56377ea3e79223dcf7b223913126f0bc332f8f6936a09550687fccaa",
+      "action_dim": 12,
+      "state_dim": 16,
+      "action_horizon": 50
+    }
+  },
+  "decision": {
+    "model": "vllm-sr/d3-flash",
+    "revision": "13dc1cc8ef23caefa765907e1d764751e5629f7d",
+    "package_check": "passed",
+    "historical_replay": [
+      {
+        "status": 200,
+        "response": {
+          "model": "d3-flash",
+          "answers": {
+            "route": {
+              "type": "choice",
+              "choice": "KEEP",
+              "probabilities": {
+                "KEEP": 0.4027519629123201,
+                "REFINE": 0.3024633605675531,
+                "SWITCH": 0.05737980977318685,
+                "REPLAN": 0.07283460538775563,
+                "ESCALATE": 0.16457026135918434
+              },
+              "confidence": 0.1427415803308848
+            }
+          },
+          "usage": {
+            "input_tokens": 6799,
+            "output_tokens": 0
+          },
+          "meta": {
+            "model_id": "vllm-sr/d3-flash",
+            "revision": "13dc1cc8ef23caefa765907e1d764751e5629f7d"
+          }
+        },
+        "seconds": 0.6479119760915637
+      },
+      {
+        "status": 200,
+        "response": {
+          "model": "d3-flash",
+          "answers": {
+            "route": {
+              "type": "choice",
+              "choice": "KEEP",
+              "probabilities": {
+                "KEEP": 0.4027519629123201,
+                "REFINE": 0.3024633605675531,
+                "SWITCH": 0.05737980977318685,
+                "REPLAN": 0.07283460538775563,
+                "ESCALATE": 0.16457026135918434
+              },
+              "confidence": 0.1427415803308848
+            }
+          },
+          "usage": {
+            "input_tokens": 6799,
+            "output_tokens": 0
+          },
+          "meta": {
+            "model_id": "vllm-sr/d3-flash",
+            "revision": "13dc1cc8ef23caefa765907e1d764751e5629f7d"
+          }
+        },
+        "seconds": 0.6282196911051869
+      }
+    ],
+    "live_check_seconds": [
+      0.8000173214823008,
+      1.2224647589027882
+    ],
+    "thresholds_calibrated": false
+  },
+  "codex": {
+    "command": "/home/junwue/tools/bin/codex",
+    "version": "0.164.0",
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "login": "existing ChatGPT login; credentials not copied",
+    "call_unit": "codex_turns"
+  },
+  "real_smoke": {
+    "path": "runs/integration-20261028-environment-instruction",
+    "result": {
+      "success": false,
+      "reason": "step_budget",
+      "error": null,
+      "control_steps": 20,
+      "interventions": 3,
+      "astra_calls": 3,
+      "astra_call_unit": "codex_turns",
+      "astra_tokens": {
+        "input_tokens": 116715,
+        "output_tokens": 825
+      },
+      "decision_checks": 2,
+      "wall_seconds": 81.07323030009866,
+      "execution_uncertain": false,
+      "environment": "robocasa"
+    },
+    "task": {
+      "instruction": "Place the toasted item on a plate.",
+      "subtasks": [
+        {
+          "name": "task",
+          "instruction": "Place the toasted item on a plate.",
+          "completion_condition": "task_success"
+        }
+      ],
+      "robot": "PandaOmron"
+    },
+    "full_task_evaluated": false
+  },
+  "code_policy_probes": {
+    "environment": "mock",
+    "observation_only": "runs/integration-20261028-codex-code-mock/verification.json",
+    "revision": "runs/integration-20261028-codex-revision-mock/verification.json",
+    "branch_contracts": "runs/integration-20261028-codex-revision-mock/verifier-branch-checks.json",
+    "physical_recovery_evaluated": false,
+    "note": "Revision probe initially set lifted=True without sufficient history, so verifier correctly remained false. Astra noted the conflicting description and retained evidence. Separate explicit verifier-positive/negative fixtures tested the revised branches; zero motion."
+  },
+  "checks": {
+    "pytest_passed": 76,
+    "ruff": "passed",
+    "setup_script_syntax": "passed"
+  },
+  "limitations": [
+    "No Composite-Seen/Unseen benchmark",
+    "Only task_success on real simulator",
+    "Depth calibration and geometry recovery not validated",
+    "No real recovery skill promotion",
+    "Decision thresholds and cost budget not calibrated"
+  ],
+  "model_services": "stopped after verification to release GPU; restart with scripts/serve_from_config.py"
+}

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1230" viewBox="0 0 1000 1230">
+  <rect width="1000" height="1230" fill="#ffffff"/>
+  <g font-family="Noto Sans CJK SC, Noto Sans SC, sans-serif" text-anchor="middle">
+    <text x="500" y="40" font-size="27" fill="#14283f" font-weight="700">连续执行 · 按需审核 · 完整子任务恢复</text>
+    <rect x="210" y="65" width="580" height="65" rx="14" fill="#eef3f8" stroke="#b5c6d6"/>
+    <text x="500" y="94" font-size="21" fill="#14283f">任务指令与 Working Memory</text>
+    <text x="500" y="116" font-size="16" fill="#536779">当前子任务 · 阶段 · 尝试状态 · 进展证据</text>
+    <path d="M500 130 V148 M495 143 L500 148 L505 143" fill="none" stroke="#71869a" stroke-width="2"/>
+    <rect x="330" y="150" width="340" height="62" rx="12" fill="#eaf1ff" stroke="#8aa7d8"/>
+    <text x="500" y="177" font-size="21" fill="#173e78">Astra 初始规划</text>
+    <text x="500" y="199" font-size="16" fill="#536779">首个动作前建立计划</text>
+    <path d="M500 212 V235 H270 V270 M265 265 L270 270 L275 265" fill="none" stroke="#71869a" stroke-width="2"/>
+    <path d="M500 235 H735 V270 M730 265 L735 270 L740 265" fill="none" stroke="#8aa7d8" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="100" y="270" width="340" height="120" rx="20" fill="#eaf7f1" stroke="#69a88b" stroke-width="2"/>
+    <text x="270" y="304" font-size="24" fill="#19553c" font-weight="700">π₀.₅ VLA</text>
+    <text x="270" y="333" font-size="19" fill="#19553c">默认连续执行</text>
+    <text x="270" y="362" font-size="16" fill="#536779">新观测 → Chunk → 5 步前缀</text>
+    <rect x="540" y="270" width="390" height="268" rx="20" fill="#f5f8fd" stroke="#b6c7df"/>
+    <text x="735" y="302" font-size="20" fill="#173e78" font-weight="700">异步只读监督</text>
+    <rect x="575" y="321" width="320" height="65" rx="12" fill="#eaf1ff" stroke="#8aa7d8"/>
+    <text x="735" y="347" font-size="20" fill="#173e78">Perception + Decision</text>
+    <text x="735" y="371" font-size="16" fill="#536779">5 时刻 × 3 视角 · 五类判断</text>
+    <path d="M735 386 V421 M730 416 L735 421 L740 416" fill="none" stroke="#71869a" stroke-width="2"/>
+    <text x="824" y="408" font-size="15" fill="#536779">非 KEEP / 周期审核</text>
+    <rect x="575" y="423" width="320" height="65" rx="12" fill="#eaf1ff" stroke="#8aa7d8"/>
+    <text x="735" y="450" font-size="20" fill="#173e78">Astra 审核 + 按需工具</text>
+    <text x="735" y="473" font-size="16" fill="#536779">Flora · 轨迹 · 几何 · Memory</text>
+    <text x="735" y="515" font-size="16" fill="#536779">审核期间 VLA 继续；无问题则继续</text>
+    <path d="M735 538 V567 M730 562 L735 567 L740 562" fill="none" stroke="#c08843" stroke-width="2"/>
+    <rect x="540" y="569" width="390" height="77" rx="12" fill="#fff5e8" stroke="#cda773"/>
+    <text x="735" y="598" font-size="20" fill="#81541b">有效干预请求 → 暂停并复核</text>
+    <text x="735" y="625" font-size="16" fill="#81541b">撤销旧控制权 · 清旧 Chunk · 新观测</text>
+    <path d="M735 646 V674 M730 669 L735 674 L740 669" fill="none" stroke="#71869a" stroke-width="2"/>
+    <rect x="540" y="676" width="390" height="105" rx="18" fill="#eaf7f1" stroke="#69a88b" stroke-width="2"/>
+    <text x="735" y="707" font-size="23" fill="#19553c" font-weight="700">Code Policy：完整子任务</text>
+    <text x="735" y="734" font-size="17" fill="#19553c">测量 → 执行 → 检查 → Astra 修订</text>
+    <text x="735" y="760" font-size="16" fill="#536779">跨版本保持接管 · 完成后验证</text>
+    <path d="M150 390 V802 H270 V820 M265 815 L270 820 L275 815" fill="none" stroke="#69a88b" stroke-width="3"/>
+    <text x="270" y="560" font-size="18" fill="#19553c">默认动作通道</text>
+    <text x="270" y="591" font-size="16" fill="#536779">监督不作为 Chunk 前置条件</text>
+    <text x="270" y="620" font-size="16" fill="#536779">真正接管后才暂停</text>
+    <path d="M735 781 V820 M730 815 L735 820 L740 815" fill="none" stroke="#69a88b" stroke-width="3"/>
+    <rect x="140" y="822" width="720" height="76" rx="16" fill="#fff1e3" stroke="#ce995e" stroke-width="2"/>
+    <text x="500" y="852" font-size="23" fill="#7d4a17" font-weight="700">Harness · 唯一动作执行入口</text>
+    <text x="500" y="880" font-size="18" fill="#7d4a17">单一控制权 · 动作检查 · 执行预算 · 回执</text>
+    <path d="M500 898 V922 M495 917 L500 922 L505 917" fill="none" stroke="#71869a" stroke-width="2"/>
+    <rect x="220" y="924" width="560" height="65" rx="12" fill="#eef3f8" stroke="#b5c6d6"/>
+    <text x="500" y="950" font-size="21" fill="#14283f">Environment Adapter</text>
+    <text x="500" y="975" font-size="17" fill="#536779">独立进程 RPC · 观测 / 动作转换</text>
+    <path d="M500 989 V1013 M495 1008 L500 1013 L505 1008" fill="none" stroke="#71869a" stroke-width="2"/>
+    <rect x="220" y="1015" width="560" height="65" rx="12" fill="#eef3f8" stroke="#b5c6d6"/>
+    <text x="500" y="1041" font-size="21" fill="#14283f">RoboCasa365 · 原生完成验证</text>
+    <text x="500" y="1066" font-size="17" fill="#536779">新观测供执行、审核及程序检查使用</text>
+    <path d="M500 1080 V1104 M495 1099 L500 1104 L505 1099" fill="none" stroke="#8aa7d8" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="140" y="1106" width="720" height="65" rx="12" fill="#f3effa" stroke="#b7a2d2"/>
+    <text x="500" y="1132" font-size="21" fill="#5b3d80">Recorder → Episodic Memory / 候选技能</text>
+    <text x="500" y="1157" font-size="17" fill="#5b3d80">保存事实、假设与独立结果 · 复测后才晋级技能</text>
+    <text x="500" y="1202" font-size="16" fill="#536779">当前开发配置 · 反馈回路用文字标注，避免跨层连线</text>
+  </g>
+</svg>

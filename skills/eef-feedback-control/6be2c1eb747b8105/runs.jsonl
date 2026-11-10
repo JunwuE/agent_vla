@@ -1,0 +1,1 @@
+{"evidence": {"kind": "format_migration", "physical_run": false, "source_skill": null, "note": "Extracted shared functions and explicit parameters; source success is not package verification."}, "layout": "format-migration"}

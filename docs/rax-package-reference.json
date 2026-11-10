@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/robot-agent-exploration/rax",
+  "checkout": "/home/junwue/code/rax",
+  "date": "2026-10-31",
+  "references": [
+    {
+      "branch": "main",
+      "commit": "db744f5950582c7c301f249192c0ed3c76517dd8",
+      "files": {
+        "skills/continual-learning/SKILL.md": "bf75ed727c08a2f34885ac2d133911d407c476da14037d43b4073fec8a099e81",
+        "skills/continual-learning/references/library-format.md": "8e37683c888efd7a296a3b7d46f9c0291ecf1f9a41b92c1370dee411810248ab"
+      }
+    },
+    {
+      "branch": "libero-pro/native",
+      "commit": "1767412c5300b9358059ae6a39740c3c28d2b8b9",
+      "files": {
+        "services/controller/storage.py": "1d7e9dbc7c980c2ad02e9c29a8b534306b348e9a8cc5632124e2943ee72c459c",
+        "auto_research_agent/api/runtime.py": "e174ddc2e53c5ba4e633f30a6ca1239e5fda9cb45a8e0ab34ee65e0f09b836c2",
+        "agent_skills/auto-research/autonomous-control/SKILL.md": "1f9c45419e929176af4f9c70abce8573d7287f7dc662ef152e5d8b13fccc9172",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE": "f1dbb9a9ad02acd1c975f986d4a324b8a6075eaa0152fcefcbd03b23a8ca03d0"
+      }
+    },
+    {
+      "branch": "real/franka",
+      "commit": "8858d7f3e34eff382abae738cf0578d2726a9a0a",
+      "files": {
+        "agent_skills/task/experience-memory/SKILL.md": "c80046f1039357bf4e9038990fe92f337f764ab3afa88157598eb83d16232dcd",
+        "auto_research_agent/api/runtime.py": "0d64503e6286457fc2d4a7c973058dc245ebbda61b04cc3d2f2701db78c5d247"
+      }
+    }
+  ],
+  "integration": "Package layout, composition, immutable bundle and supplied-context protocol patterns adapted to VLA Agent. No RAX runtime dependency."
+}

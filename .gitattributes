@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+# Frozen skill identities include source/contract hashes: preserve exact bytes.
+skills/** -text
+examples/open_drawer/initial_memory/** -text
+examples/open_drawer/r4_candidates/** -text
+
+# Preserve the published experiment CSV exactly as exported.
+docs/experiments/*.csv -text whitespace=cr-at-eol

@@ -1,0 +1,115 @@
+# Fixed development suite: current nonblocking architecture; Flora optional service disabled.
+# Native task horizon, seed 0, no cross-episode skill promotion. Thresholds remain uncalibrated.
+environment:
+  kind: robocasa
+  source_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robocasa365
+  robosuite_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robosuite365
+  extra_python_paths:
+  - /share/project/robot-rfm/robot-exp/usr/cjy/simulation_tools
+  library_path: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/lib
+  renderer: osmesa
+  rpc_timeout_seconds: 180.0
+  python: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/bin/python
+  task_name: PickPlaceToasterToCounter
+  instruction_source: environment
+  scene_split: target
+  task_group: atomic_seen
+  seed: 7
+  enable_depth: false
+  camera_size: 256
+vla:
+  kind: pi05
+  endpoint: ws://127.0.0.1:8010
+  timeout_seconds: 120.0
+  action_layout: base_first
+  state_layout: base_first
+  binary_encoding: signed
+  clip_actions: true
+  image_size: 256
+  expected_contract: vla-agent.omnisf.mobile12.v1
+  openpi_path: /home/junwue/code/omnisf
+  python: /home/junwue/envs/pi05/bin/python
+  checkpoint: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999
+  norm_stats: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999/assets/robocasa365_target_atomic/norm_stats.json
+  normalization: quantile
+  training_config: robocasa365_target_atomic
+decision:
+  kind: decision3
+  endpoint: http://127.0.0.1:8020/v1/systemone
+  model: vllm-sr/d3-flash
+  revision: 13dc1cc8ef23caefa765907e1d764751e5629f7d
+  timeout_seconds: 20.0
+  interval_steps: 100
+  max_unreviewed_steps: 5
+  max_age_seconds: 30.0
+  max_age_steps: 15
+  window_frames: 5
+  primary_camera: left
+  context_mode: compact
+  keep_threshold: 0.0
+  min_margin: 0.05
+planner:
+  kind: codex
+  codex_command: /home/junwue/tools/bin/codex
+  max_tool_calls: 24
+  compact_context: true
+  preserve_initial_instruction: true
+  window_frames: 3
+  endpoint: https://api.openai.com/v1/responses
+  model: gpt-6-astra
+  api_key_env: OPENAI_API_KEY
+  reasoning_effort: high
+  timeout_seconds: 300.0
+  max_calls: 12
+  max_turns_per_intervention: 6
+  max_output_tokens: 4096
+flora:
+  enabled: false
+  endpoint: http://127.0.0.1:8030/v1/outcome
+  model: nvidia/Flora-Rewarder
+  revision: 031299e46e452fc0cedb4e0975eb9fa95fc37783
+  python: /home/junwue/envs/flora/bin/python
+  cameras:
+  - left
+  - wrist
+  timeout_seconds: 30.0
+  max_calls: 6
+  max_segment_steps: 3000
+  max_segment_seconds: 120
+runtime:
+  experiment_label: default
+  supervision_enabled: true
+  initial_planning: true
+  nonblocking_review: true
+  max_reviews: 12
+  review_max_age_steps: 100
+  review_max_age_seconds: 120.0
+  allowed_interventions:
+  - continue
+  - refine
+  - switch
+  - replan
+  - code
+  - observe
+  - stop
+  max_steps: 3000
+  max_wall_seconds: 1800
+  chunk_steps: 5
+  max_interventions: 8
+  max_no_progress_interventions: 3
+  recovery_seconds: 15
+  recovery_steps: 30
+  recovery_attempts: 2
+  recovery_total_steps: 60
+  recovery_total_seconds: 120
+  stagnation_steps: 10
+  memory_mode: frozen
+  skill_library: skills
+task:
+  instruction: Place the toasted item on a plate.
+  subtasks:
+  - name: task
+    instruction: Place the toasted item on a plate.
+    completion_condition: task_success
+  robot: PandaOmron
+  language_catalog: []

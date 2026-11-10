@@ -1,0 +1,2 @@
+# Same validated CUDA/Transformers stack; isolated model-service environment.
+-r decision3-requirements.txt

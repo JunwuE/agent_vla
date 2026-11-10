@@ -1,0 +1,12 @@
+# Compatibility constraints for robocasa-benchmark/openpi, JAX inference.
+numpy==1.26.4
+ml-dtypes==0.4.1
+tensorstore==0.1.74
+opencv-python==4.11.0.86
+opencv-python-headless==4.11.0.86
+torchvision==0.22.1
+torchcodec==0.5.0
+transformers==4.53.2
+pyarrow==20.0.0
+websockets==14.2
+chex==0.1.89

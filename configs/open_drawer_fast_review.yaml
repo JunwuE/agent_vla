@@ -1,0 +1,171 @@
+environment:
+  kind: robocasa
+  source_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robocasa365
+  robosuite_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robosuite365
+  extra_python_paths:
+  - /share/project/robot-rfm/robot-exp/usr/cjy/simulation_tools
+  library_path: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/lib
+  renderer: osmesa
+  rpc_timeout_seconds: 180.0
+  python: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/bin/python
+  task_name: OpenDrawer
+  instruction_source: environment
+  scene_split: target
+  task_group: atomic_seen
+  seed: 0
+  enable_depth: true
+  camera_size: 256
+  ignore_native_horizon: true
+  native_subtask_checks: false
+vla:
+  kind: pi05
+  endpoint: ws://127.0.0.1:8010
+  timeout_seconds: 120.0
+  action_layout: base_first
+  state_layout: base_first
+  binary_encoding: signed
+  clip_actions: true
+  image_size: 256
+  expected_contract: vla-agent.omnisf.mobile12.v1
+  openpi_path: /home/junwue/code/omnisf
+  python: /home/junwue/envs/pi05/bin/python
+  checkpoint: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999
+  norm_stats: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999/assets/robocasa365_target_atomic/norm_stats.json
+  normalization: quantile
+  training_config: robocasa365_target_atomic
+  sampling_seed: 42
+decision:
+  kind: flora
+  flora:
+    window_steps: 200
+    max_calls: 40
+    low_score: 2
+    high_score: 4
+    low_checks: 2
+    plateau_checks: 3
+    drop_points: 2
+    review_cooldown_steps: 150
+  endpoint: http://127.0.0.1:8020/v1/systemone
+  model: vllm-sr/d3-flash
+  revision: null
+  timeout_seconds: 20.0
+  interval_steps: 50
+  max_unreviewed_steps: 5
+  max_age_seconds: 30.0
+  max_age_steps: 50
+  window_frames: 5
+  primary_camera: null
+  history_cameras:
+  - left
+  - right
+  - wrist
+  context_mode: compact
+  keep_threshold: 0.8
+  min_margin: 0.1
+  sampling: multiscale
+  history_seconds:
+  - 10.0
+  - 5.0
+  - 2.0
+  - 0.5
+  - 0.0
+  latest_cameras:
+  - wrist
+  - right
+planner:
+  kind: codex
+  codex_command: /home/junwue/tools/bin/codex
+  max_tool_calls: 24
+  compact_context: true
+  compact_numeric_history: true
+  deduplicate_experiences: true
+  historical_memory_mode: summary
+  historical_memory_chars: 4000
+  working_memory_mode: summary
+  working_memory_chars: 8000
+  thread_max_turns: 4
+  preserve_initial_instruction: true
+  window_frames: 5
+  endpoint: https://api.openai.com/v1/responses
+  model: gpt-6-astra
+  api_key_env: OPENAI_API_KEY
+  reasoning_effort: high
+  timeout_seconds: 300
+  max_calls: 8
+  max_turns_per_intervention: 1
+  max_output_tokens: 4096
+  max_total_tokens: 1500000
+  release_validated_proposal_on_budget: true
+  review_tool_limit: 4
+flora:
+  enabled: true
+  endpoint: http://127.0.0.1:8030/v1/outcome
+  model: nvidia/Flora-Rewarder
+  revision: 031299e46e452fc0cedb4e0975eb9fa95fc37783
+  python: /home/junwue/envs/flora/bin/python
+  cameras:
+  - left
+  - wrist
+  timeout_seconds: 120.0
+  max_calls: 4
+  max_segment_steps: 3000
+  max_segment_seconds: 120.0
+  with_rationale: false
+  quantization: none
+  gpu_memory_gib: null
+runtime:
+  experiment_label: opendrawer-r2-fast-review
+  supervision_enabled: true
+  initial_planning: true
+  nonblocking_review: true
+  max_reviews: 8
+  review_max_age_steps: 150
+  review_max_age_seconds: 120.0
+  allowed_interventions:
+  - continue
+  - refine
+  - switch
+  - replan
+  - code
+  - observe
+  - stop
+  max_steps: 1500
+  max_wall_seconds: null
+  chunk_steps: 5
+  max_interventions: 8
+  max_no_progress_interventions: 3
+  recovery_seconds: 360
+  recovery_steps: 600
+  recovery_attempts: 3
+  recovery_tool_calls: 4096
+  recovery_observation_bytes: 268435456
+  recovery_program_versions: 24
+  recovery_total_steps: 1200
+  recovery_total_seconds: 1200
+  stagnation_steps: 10
+  stagnation_enabled: true
+  stagnation_scope: eef_translation
+  stagnation_seconds: 2.0
+  stagnation_position_m: 0.01
+  stagnation_rotation_rad: 0.05
+  stagnation_gripper_m: 0.001
+  stagnation_command_threshold: 0.05
+  stagnation_cooldown_seconds: 4.0
+  memory_mode: accumulate
+  skill_library: /home/junwue/code/vla_agent/memory/open_drawer/reuse-20261104/skills
+  experience_library: /home/junwue/code/vla_agent/memory/open_drawer/reuse-20261104/experiences
+  task_memory_library: /home/junwue/code/vla_agent/memory/open_drawer/reuse-20261104/tasks
+  audit_interval_steps: 0
+  recovery_sandbox: landlock
+  progress_review_cooldown_steps: 200
+  review_stall_recheck_displacement_m: 0.05
+  continue_vla_on_review_budget: true
+task:
+  instruction: Use the environment-provided task instruction.
+  subtasks:
+  - name: task
+    instruction: Use the environment-provided task instruction.
+    completion_condition: task_success
+    preconditions: []
+  robot: PandaOmron
+  language_catalog: []

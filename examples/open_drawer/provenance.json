@@ -1,0 +1,882 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "scope": "Immutable source, contracts and compact evidence only; raw episodes are not distributed.",
+  "files": [
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/0eda3c01b514292931db8ee7e78e8b478842b2619f615f094ed65bc5f44f1743.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/0eda3c01b514292931db8ee7e78e8b478842b2619f615f094ed65bc5f44f1743.json",
+      "sha256": "0eda3c01b514292931db8ee7e78e8b478842b2619f615f094ed65bc5f44f1743"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/15f52369f6f45de8881a92a11e2e96c2210e3ecc2a14d604a4d279b1e56cb3bf.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/15f52369f6f45de8881a92a11e2e96c2210e3ecc2a14d604a4d279b1e56cb3bf.json",
+      "sha256": "15f52369f6f45de8881a92a11e2e96c2210e3ecc2a14d604a4d279b1e56cb3bf"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/2292077147bd2921e890f0fb1d69802819b232e715f7d5c637b36f2a0e130cd7.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/2292077147bd2921e890f0fb1d69802819b232e715f7d5c637b36f2a0e130cd7.json",
+      "sha256": "2292077147bd2921e890f0fb1d69802819b232e715f7d5c637b36f2a0e130cd7"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/538e91b1d0140bf22d70afe95eeff468ddef0ee729847cd0720e16ee1f238d67.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/538e91b1d0140bf22d70afe95eeff468ddef0ee729847cd0720e16ee1f238d67.json",
+      "sha256": "538e91b1d0140bf22d70afe95eeff468ddef0ee729847cd0720e16ee1f238d67"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/6dc48ceef3a53367fd977578d219148db03d4ec844a98d9499507f3c85b7e8c4.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/6dc48ceef3a53367fd977578d219148db03d4ec844a98d9499507f3c85b7e8c4.json",
+      "sha256": "6dc48ceef3a53367fd977578d219148db03d4ec844a98d9499507f3c85b7e8c4"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/81275e702e7aa50f5369552b8bf445f1741e38069642505b2db8e4b58970c914.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/81275e702e7aa50f5369552b8bf445f1741e38069642505b2db8e4b58970c914.json",
+      "sha256": "81275e702e7aa50f5369552b8bf445f1741e38069642505b2db8e4b58970c914"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/b01944403cc5586af79eb135d16fc88ed476edf2d7e087773a5288e3ee8b77dd.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/b01944403cc5586af79eb135d16fc88ed476edf2d7e087773a5288e3ee8b77dd.json",
+      "sha256": "b01944403cc5586af79eb135d16fc88ed476edf2d7e087773a5288e3ee8b77dd"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/b560956a84b41eb4d9536a37069a9dd55493e9115d806747b600d9d2f500555a.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/b560956a84b41eb4d9536a37069a9dd55493e9115d806747b600d9d2f500555a.json",
+      "sha256": "b560956a84b41eb4d9536a37069a9dd55493e9115d806747b600d9d2f500555a"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/e017c59a82a68eb14a4ccf8ebdc7748e902696e2628d5d1c6b27cb66cbd4040a.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/e017c59a82a68eb14a4ccf8ebdc7748e902696e2628d5d1c6b27cb66cbd4040a.json",
+      "sha256": "e017c59a82a68eb14a4ccf8ebdc7748e902696e2628d5d1c6b27cb66cbd4040a"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/experiences/fb2efe638f96011494bb849ff00585f784ce165f400f0ab01faacd88de81f8ca.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/experiences/fb2efe638f96011494bb849ff00585f784ce165f400f0ab01faacd88de81f8ca.json",
+      "sha256": "fb2efe638f96011494bb849ff00585f784ce165f400f0ab01faacd88de81f8ca"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/catalog.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/catalog.json",
+      "sha256": "80d53d940f6223606dd53bdad087b62031dde620f592589cd05cb566b8c96b77"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/SKILL.md",
+      "sha256": "15cfc227b72a92e1dc362d671a67c353ac950f9b79880c22d0aaed31d76c69b5"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/controller.py",
+      "sha256": "095732c8d7e0e97d4b00b06ca15b06c05e2ebc6d8a254a37e8aac14ecd6e932d"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/params.py",
+      "sha256": "56567c6ce069584202681f11b9c5b84408467414a9e09eed6c90d01745eaafda"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/perception.py",
+      "sha256": "3e5ae35a87170955c53e0f426d0bc4ef2311ceaaeaf32fa77e460ed705e1a784"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/run.py",
+      "sha256": "3d2cdd5b8685b51432e56cac4e514303d8a3473d32b93a1992982a89d46050d9"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/manifest.json",
+      "sha256": "d492a375056a3d4e7da8ea078dfe75db99acd7993c2899fd5dfb086393dd5111"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/policy.py",
+      "sha256": "3d2cdd5b8685b51432e56cac4e514303d8a3473d32b93a1992982a89d46050d9"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/runs.jsonl",
+      "sha256": "c98a0caafef8e5e04f6917aa6eebb18aa1e6395e51e540166e1c1384937d8133"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/SKILL.md",
+      "sha256": "a62dc17f2a641ae1b3f4443035a8f40eb10e20d423d655d7bbde83d98521789f"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/__init__.py",
+      "sha256": "4da8ff2a9555b5f2c6112aaf9927ff39d98011ac4293a57b71d01fd501a0dbbd"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/control.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/control.py",
+      "sha256": "206f25a2273d0635edf663f396f4d3102a9a35f4e4e2a3d77df50ab9e90251f0"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/params.py",
+      "sha256": "6a924315542b4627c7056dbc0601598a22118cfc1a62214bdf6756321867b8bb"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/code/run.py",
+      "sha256": "8c21d04218cbaed534e7c42ef42e38de5aa17a52939095b04010c16dda0dcef6"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/manifest.json",
+      "sha256": "185dff2e079ab56196a7356a974e20927628d51853af42c19e4931ec881129ed"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/policy.py",
+      "sha256": "8c21d04218cbaed534e7c42ef42e38de5aa17a52939095b04010c16dda0dcef6"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/eef-feedback-control/6be2c1eb747b8105/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/eef-feedback-control/6be2c1eb747b8105/runs.jsonl",
+      "sha256": "82e6efd4dc14f6600d0548bc84315b81b80fd0e369faa99eb75c6b2aabb418e3"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/SKILL.md",
+      "sha256": "b4846a82ae08b4030ae8f6b5ebec63dbc3d4fdde5b8d608cdb55b5159b5e3143"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/controller.py",
+      "sha256": "6bc011dc74c2cc1f6e1ce20a567289a0a0cd520ca428e6b2b8f6e8cdf5fa8c1c"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/params.py",
+      "sha256": "005778ad8207596b3d777369a4a8576fe330c9ebb348387094ca162253b608f8"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/perception.py",
+      "sha256": "6fb955bf461ed71b4b8223cefddfef5e269ba4f10323bdff54ba128292bcf815"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/run.py",
+      "sha256": "97e46d926431448610ea612e0a9ff1cd3700f0e29fede8baebb5e7ed88a44dd7"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/manifest.json",
+      "sha256": "506d20b841c4b2138048c2edf9d06f10ae8aab04dc7e83ab72b285bcf00c3b12"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/policy.py",
+      "sha256": "97e46d926431448610ea612e0a9ff1cd3700f0e29fede8baebb5e7ed88a44dd7"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/runs.jsonl",
+      "sha256": "2705d818ddb614394e6f3c74df1962f949cda6b591944276faeb00c36d12c11c"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/SKILL.md",
+      "sha256": "295c6fe3f647031472daf6ec1458ba5af7130ad4116ccbe499327467364342a9"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "sha256": "1878b2ccff7ff8ea27a5e99834288a05b0eb510549c766fddaea492c9f5ad88b"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "sha256": "fe450f06036847470540848fbe8f488be033e2387f98d4142da1bed7c826fbca"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "sha256": "a0cc47fdb9ceeec064d18cc2a31ba40b550b93b4d3678c50aec1428a1e0cb217"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/run.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/manifest.json",
+      "sha256": "1aa1419197a1e8a573fda856d7b06497223477784a7f25fad2e6dd9254899797"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/policy.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/runs.jsonl",
+      "sha256": "26ad848a6fefec4a5d02121b57336fb6e9dd7aa1362c2a6f0ed330f370f722d2"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/SKILL.md",
+      "sha256": "2560c2a73a2b9c8631e85337b0ac299953ff01dc02a9548916c7fc97e43915a2"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/controller.py",
+      "sha256": "a1633c30262dbd89e4435c7083a91a744c920a86f2e1997bb0efc724c631c0c1"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/params.py",
+      "sha256": "256ea977bad2add39acc7d028581014c685bb3e1badf606e776c6a6a2ac52e68"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/perception.py",
+      "sha256": "cb0fa2e997865c2f3c37bd6512459c4ac6eeb80a7197a90417a51a8efd86135d"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/run.py",
+      "sha256": "d54fa8103036dde30ef136271efabb6b64a32f0ba79cf28e1789bd6188345e6c"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/manifest.json",
+      "sha256": "63da1d49603f6601dc57ba276f2e694421e9bad8f974308f593e6796ef4d61cd"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/policy.py",
+      "sha256": "d54fa8103036dde30ef136271efabb6b64a32f0ba79cf28e1789bd6188345e6c"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/runs.jsonl",
+      "sha256": "ca13f2c00acab8e9a63502483a6c393236a668fa758ec5a2601ee1d0b3f95504"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/SKILL.md",
+      "sha256": "6fdcc6d23f9cf39dc777cc9123d81cdb6e0dfb18fa02129549d7a97f6454cfeb"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/controller.py",
+      "sha256": "9fa011dffc4e8e4974ebbb3d416283265945bf0b1f8351e28ebd6a059486b19c"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/params.py",
+      "sha256": "76387d6368c5f9b758836f082ae1139a703cdd8e3b223f8aa5dea0c43d57cea8"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/perception.py",
+      "sha256": "9747345696a3ec1b4b6b6b6277626198a7b6dd71dd49ef8e0af9d5f31755d132"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/run.py",
+      "sha256": "e5fda7bb7572e14adbd8740b9891d2c2a335df58fdeda0c1914450439be022ee"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/manifest.json",
+      "sha256": "3f462f8f929a9bc29f5c26d7c31f8e8ff5454897c8a4a382d2933d6e5a7a294f"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/policy.py",
+      "sha256": "e5fda7bb7572e14adbd8740b9891d2c2a335df58fdeda0c1914450439be022ee"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/open-drawer-from-missed-handle/70353ead85a0912c/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/open-drawer-from-missed-handle/70353ead85a0912c/runs.jsonl",
+      "sha256": "9f78e93820a2a4255e1343608eed0bd62193ea853c17ffd84e2d38b02b873e97"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/SKILL.md",
+      "sha256": "b909a9e4bef33e02a5435567eced47176f297af55050213bd24ab7b2c52aa533"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/__init__.py",
+      "sha256": "bd083305558931f3ada55b25dec2b68f84bba2b75dc5ccb5d6994aa7529e89c3"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/geometry.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/geometry.py",
+      "sha256": "8df64ac3a985ef54dddbd141e973edd6b701ea30024985e7ffabe25bde008fdc"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/params.py",
+      "sha256": "243c7a0848759311d64c33ce85a898dbb6fb9ffe713a73a2fe4c018053fc8516"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/run.py",
+      "sha256": "8212763c041584171e01a454daff0a539756e8a3b67b5221d5b3e97ab3886e28"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/manifest.json",
+      "sha256": "085c3875dafde6c95cc7ca54a13e89b04d97415a9407c4873107f571d57a7c1f"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/policy.py",
+      "sha256": "8212763c041584171e01a454daff0a539756e8a3b67b5221d5b3e97ab3886e28"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/skills/rgbd-surface-geometry/5aa70d58296eb1b4/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/skills/rgbd-surface-geometry/5aa70d58296eb1b4/runs.jsonl",
+      "sha256": "82e6efd4dc14f6600d0548bc84315b81b80fd0e369faa99eb75c6b2aabb418e3"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/tasks/OpenDrawer-b8b71eee55e3/profile.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/tasks/OpenDrawer-b8b71eee55e3/profile.json",
+      "sha256": "bed5436d033261d21e27f00bc8de0ee2cce55215e6b6da21ca08abccd2575744"
+    },
+    {
+      "published": "examples/open_drawer/initial_memory/tasks/OpenDrawer-b8b71eee55e3/versions/d26cfc00c7c3763182913e3ab827c8c09271ffde4f163d2fdac25bb6c7fa8285.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r3-resilient/initial/tasks/OpenDrawer-b8b71eee55e3/versions/d26cfc00c7c3763182913e3ab827c8c09271ffde4f163d2fdac25bb6c7fa8285.json",
+      "sha256": "bed5436d033261d21e27f00bc8de0ee2cce55215e6b6da21ca08abccd2575744"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/DEVELOPMENT_NOTES.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/DEVELOPMENT_NOTES.md",
+      "sha256": "d5ad18f996a5d5b77bd603606a43766cd8d833ebc649e63ab890051ff0db75cb"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/INDEX.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/INDEX.md",
+      "sha256": "2f209849df88269595d05c2b36d91240d0c096a3cf86f3bbaba46d0fd99a3fb8"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/0eda3c01b514292931db8ee7e78e8b478842b2619f615f094ed65bc5f44f1743.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/0eda3c01b514292931db8ee7e78e8b478842b2619f615f094ed65bc5f44f1743.json",
+      "sha256": "0eda3c01b514292931db8ee7e78e8b478842b2619f615f094ed65bc5f44f1743"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/15f52369f6f45de8881a92a11e2e96c2210e3ecc2a14d604a4d279b1e56cb3bf.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/15f52369f6f45de8881a92a11e2e96c2210e3ecc2a14d604a4d279b1e56cb3bf.json",
+      "sha256": "15f52369f6f45de8881a92a11e2e96c2210e3ecc2a14d604a4d279b1e56cb3bf"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/1e12df38c736acd2091bab881240815434438e06d50ed88e7b361a430a51917a.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/1e12df38c736acd2091bab881240815434438e06d50ed88e7b361a430a51917a.json",
+      "sha256": "1e12df38c736acd2091bab881240815434438e06d50ed88e7b361a430a51917a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/2292077147bd2921e890f0fb1d69802819b232e715f7d5c637b36f2a0e130cd7.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/2292077147bd2921e890f0fb1d69802819b232e715f7d5c637b36f2a0e130cd7.json",
+      "sha256": "2292077147bd2921e890f0fb1d69802819b232e715f7d5c637b36f2a0e130cd7"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/52d8dc4b496fe519ab1cc98a3f03056d1e1755524af061765400eb7451d71767.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/52d8dc4b496fe519ab1cc98a3f03056d1e1755524af061765400eb7451d71767.json",
+      "sha256": "52d8dc4b496fe519ab1cc98a3f03056d1e1755524af061765400eb7451d71767"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/538e91b1d0140bf22d70afe95eeff468ddef0ee729847cd0720e16ee1f238d67.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/538e91b1d0140bf22d70afe95eeff468ddef0ee729847cd0720e16ee1f238d67.json",
+      "sha256": "538e91b1d0140bf22d70afe95eeff468ddef0ee729847cd0720e16ee1f238d67"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/6dc48ceef3a53367fd977578d219148db03d4ec844a98d9499507f3c85b7e8c4.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/6dc48ceef3a53367fd977578d219148db03d4ec844a98d9499507f3c85b7e8c4.json",
+      "sha256": "6dc48ceef3a53367fd977578d219148db03d4ec844a98d9499507f3c85b7e8c4"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/72b606ae2817f8dcfb9e8e8fc8e7829fdaa7251424668f2f3afba1cb111a9cea.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/72b606ae2817f8dcfb9e8e8fc8e7829fdaa7251424668f2f3afba1cb111a9cea.json",
+      "sha256": "72b606ae2817f8dcfb9e8e8fc8e7829fdaa7251424668f2f3afba1cb111a9cea"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/80258317aa4bd29c6af2d73c6db9bdaf5393560ba678a68555317aa498ebb1a8.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/80258317aa4bd29c6af2d73c6db9bdaf5393560ba678a68555317aa498ebb1a8.json",
+      "sha256": "80258317aa4bd29c6af2d73c6db9bdaf5393560ba678a68555317aa498ebb1a8"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/81275e702e7aa50f5369552b8bf445f1741e38069642505b2db8e4b58970c914.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/81275e702e7aa50f5369552b8bf445f1741e38069642505b2db8e4b58970c914.json",
+      "sha256": "81275e702e7aa50f5369552b8bf445f1741e38069642505b2db8e4b58970c914"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/9548b11d2a7fd168ca2983467ecce4083395087df6c18abe708e787da90bccdf.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/9548b11d2a7fd168ca2983467ecce4083395087df6c18abe708e787da90bccdf.json",
+      "sha256": "9548b11d2a7fd168ca2983467ecce4083395087df6c18abe708e787da90bccdf"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/b01944403cc5586af79eb135d16fc88ed476edf2d7e087773a5288e3ee8b77dd.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/b01944403cc5586af79eb135d16fc88ed476edf2d7e087773a5288e3ee8b77dd.json",
+      "sha256": "b01944403cc5586af79eb135d16fc88ed476edf2d7e087773a5288e3ee8b77dd"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/b560956a84b41eb4d9536a37069a9dd55493e9115d806747b600d9d2f500555a.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/b560956a84b41eb4d9536a37069a9dd55493e9115d806747b600d9d2f500555a.json",
+      "sha256": "b560956a84b41eb4d9536a37069a9dd55493e9115d806747b600d9d2f500555a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/e017c59a82a68eb14a4ccf8ebdc7748e902696e2628d5d1c6b27cb66cbd4040a.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/e017c59a82a68eb14a4ccf8ebdc7748e902696e2628d5d1c6b27cb66cbd4040a.json",
+      "sha256": "e017c59a82a68eb14a4ccf8ebdc7748e902696e2628d5d1c6b27cb66cbd4040a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/experiences/fb2efe638f96011494bb849ff00585f784ce165f400f0ab01faacd88de81f8ca.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/experiences/fb2efe638f96011494bb849ff00585f784ce165f400f0ab01faacd88de81f8ca.json",
+      "sha256": "fb2efe638f96011494bb849ff00585f784ce165f400f0ab01faacd88de81f8ca"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/retention.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/retention.json",
+      "sha256": "5d3e5433d39ac8bcba7039d894b8176b434daddf9e64a1e67499024801e5421e"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/catalog.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/catalog.json",
+      "sha256": "80d53d940f6223606dd53bdad087b62031dde620f592589cd05cb566b8c96b77"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/SKILL.md",
+      "sha256": "15cfc227b72a92e1dc362d671a67c353ac950f9b79880c22d0aaed31d76c69b5"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/controller.py",
+      "sha256": "095732c8d7e0e97d4b00b06ca15b06c05e2ebc6d8a254a37e8aac14ecd6e932d"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/params.py",
+      "sha256": "56567c6ce069584202681f11b9c5b84408467414a9e09eed6c90d01745eaafda"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/drawer_pull_from_handle_hold/perception.py",
+      "sha256": "3e5ae35a87170955c53e0f426d0bc4ef2311ceaaeaf32fa77e460ed705e1a784"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/code/run.py",
+      "sha256": "3d2cdd5b8685b51432e56cac4e514303d8a3473d32b93a1992982a89d46050d9"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/manifest.json",
+      "sha256": "d492a375056a3d4e7da8ea078dfe75db99acd7993c2899fd5dfb086393dd5111"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/policy.py",
+      "sha256": "3d2cdd5b8685b51432e56cac4e514303d8a3473d32b93a1992982a89d46050d9"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-pull-from-handle-hold/95bf87d8c3414ad4/runs.jsonl",
+      "sha256": "c98a0caafef8e5e04f6917aa6eebb18aa1e6395e51e540166e1c1384937d8133"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/SKILL.md",
+      "sha256": "ab936cc225eb170a3356a8f54e0c8b7865a8b047412131f8368158a8efb52030"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "sha256": "957bfd5adf409011ac90438e325ea41648d7a05f359c68f50a5eb9b872ed5e4c"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "sha256": "fe450f06036847470540848fbe8f488be033e2387f98d4142da1bed7c826fbca"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "sha256": "a0cc47fdb9ceeec064d18cc2a31ba40b550b93b4d3678c50aec1428a1e0cb217"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/code/run.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/manifest.json",
+      "sha256": "d01711806172b65569b37c8c40e0465182b4ea330b30befaf429555cf2344291"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/policy.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/5ada71444e905c90/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/5ada71444e905c90/runs.jsonl",
+      "sha256": "4694e8b6a2330668c5433884aae4f1c6779d49777e5a2c38f90eaf9b6380cca7"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/SKILL.md",
+      "sha256": "22ce5f996eedf2be577e9b636f31bdb52ce43073eb5b2d17041599171cbff895"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "sha256": "ee6ee8cad5b1d8c287e0f5a25f8e2463649701d2fb8c4098b8fc5ef44efcef6e"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "sha256": "fe450f06036847470540848fbe8f488be033e2387f98d4142da1bed7c826fbca"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "sha256": "a0cc47fdb9ceeec064d18cc2a31ba40b550b93b4d3678c50aec1428a1e0cb217"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/code/run.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/manifest.json",
+      "sha256": "633c548d13ecf34b71ab5eaee07a34ac059d7b4a20620f3a8135631006ba8c46"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/policy.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/drawer-regrasp-and-open/83f6bbe4e358fc9c/runs.jsonl",
+      "sha256": "34b4049e645318d10e73e0a56447e2e7615d6856d6855d7377d6bdd18a11a815"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/SKILL.md",
+      "sha256": "a62dc17f2a641ae1b3f4443035a8f40eb10e20d423d655d7bbde83d98521789f"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/__init__.py",
+      "sha256": "4da8ff2a9555b5f2c6112aaf9927ff39d98011ac4293a57b71d01fd501a0dbbd"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/control.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/control.py",
+      "sha256": "206f25a2273d0635edf663f396f4d3102a9a35f4e4e2a3d77df50ab9e90251f0"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/code/eef_feedback_control/params.py",
+      "sha256": "6a924315542b4627c7056dbc0601598a22118cfc1a62214bdf6756321867b8bb"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/code/run.py",
+      "sha256": "8c21d04218cbaed534e7c42ef42e38de5aa17a52939095b04010c16dda0dcef6"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/manifest.json",
+      "sha256": "185dff2e079ab56196a7356a974e20927628d51853af42c19e4931ec881129ed"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/policy.py",
+      "sha256": "8c21d04218cbaed534e7c42ef42e38de5aa17a52939095b04010c16dda0dcef6"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/eef-feedback-control/6be2c1eb747b8105/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/eef-feedback-control/6be2c1eb747b8105/runs.jsonl",
+      "sha256": "82e6efd4dc14f6600d0548bc84315b81b80fd0e369faa99eb75c6b2aabb418e3"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/SKILL.md",
+      "sha256": "b4846a82ae08b4030ae8f6b5ebec63dbc3d4fdde5b8d608cdb55b5159b5e3143"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/controller.py",
+      "sha256": "6bc011dc74c2cc1f6e1ce20a567289a0a0cd520ca428e6b2b8f6e8cdf5fa8c1c"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/params.py",
+      "sha256": "005778ad8207596b3d777369a4a8576fe330c9ebb348387094ca162253b608f8"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/open_drawer_from_misaligned_handle/perception.py",
+      "sha256": "6fb955bf461ed71b4b8223cefddfef5e269ba4f10323bdff54ba128292bcf815"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/code/run.py",
+      "sha256": "97e46d926431448610ea612e0a9ff1cd3700f0e29fede8baebb5e7ed88a44dd7"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/manifest.json",
+      "sha256": "506d20b841c4b2138048c2edf9d06f10ae8aab04dc7e83ab72b285bcf00c3b12"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/policy.py",
+      "sha256": "97e46d926431448610ea612e0a9ff1cd3700f0e29fede8baebb5e7ed88a44dd7"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-handle/7b695da7a1fcfd36/runs.jsonl",
+      "sha256": "2705d818ddb614394e6f3c74df1962f949cda6b591944276faeb00c36d12c11c"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/SKILL.md",
+      "sha256": "295c6fe3f647031472daf6ec1458ba5af7130ad4116ccbe499327467364342a9"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/controller.py",
+      "sha256": "1878b2ccff7ff8ea27a5e99834288a05b0eb510549c766fddaea492c9f5ad88b"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/params.py",
+      "sha256": "fe450f06036847470540848fbe8f488be033e2387f98d4142da1bed7c826fbca"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/open_drawer_from_misaligned_open_gripper/perception.py",
+      "sha256": "a0cc47fdb9ceeec064d18cc2a31ba40b550b93b4d3678c50aec1428a1e0cb217"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/code/run.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/manifest.json",
+      "sha256": "1aa1419197a1e8a573fda856d7b06497223477784a7f25fad2e6dd9254899797"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/policy.py",
+      "sha256": "7ff6877c32edbb5b71aa75992d775beb28bae28faa59201981b577456b64c55a"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-misaligned-open-gripper/0ed2fc3427424179/runs.jsonl",
+      "sha256": "38fcbf03b128cee1a64d3f9dad3d482f332780ce046ad7e98e9d6e5ccebb18e1"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/SKILL.md",
+      "sha256": "2560c2a73a2b9c8631e85337b0ac299953ff01dc02a9548916c7fc97e43915a2"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/controller.py",
+      "sha256": "a1633c30262dbd89e4435c7083a91a744c920a86f2e1997bb0efc724c631c0c1"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/params.py",
+      "sha256": "256ea977bad2add39acc7d028581014c685bb3e1badf606e776c6a6a2ac52e68"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/open_drawer_from_missed_grasp/perception.py",
+      "sha256": "cb0fa2e997865c2f3c37bd6512459c4ac6eeb80a7197a90417a51a8efd86135d"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/code/run.py",
+      "sha256": "d54fa8103036dde30ef136271efabb6b64a32f0ba79cf28e1789bd6188345e6c"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/manifest.json",
+      "sha256": "63da1d49603f6601dc57ba276f2e694421e9bad8f974308f593e6796ef4d61cd"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/policy.py",
+      "sha256": "d54fa8103036dde30ef136271efabb6b64a32f0ba79cf28e1789bd6188345e6c"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-grasp/7766677d945ef0ca/runs.jsonl",
+      "sha256": "ca13f2c00acab8e9a63502483a6c393236a668fa758ec5a2601ee1d0b3f95504"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/SKILL.md",
+      "sha256": "6fdcc6d23f9cf39dc777cc9123d81cdb6e0dfb18fa02129549d7a97f6454cfeb"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/controller.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/controller.py",
+      "sha256": "9fa011dffc4e8e4974ebbb3d416283265945bf0b1f8351e28ebd6a059486b19c"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/params.py",
+      "sha256": "76387d6368c5f9b758836f082ae1139a703cdd8e3b223f8aa5dea0c43d57cea8"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/perception.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/open_drawer_from_missed_handle/perception.py",
+      "sha256": "9747345696a3ec1b4b6b6b6277626198a7b6dd71dd49ef8e0af9d5f31755d132"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/code/run.py",
+      "sha256": "e5fda7bb7572e14adbd8740b9891d2c2a335df58fdeda0c1914450439be022ee"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/manifest.json",
+      "sha256": "3f462f8f929a9bc29f5c26d7c31f8e8ff5454897c8a4a382d2933d6e5a7a294f"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/policy.py",
+      "sha256": "e5fda7bb7572e14adbd8740b9891d2c2a335df58fdeda0c1914450439be022ee"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/open-drawer-from-missed-handle/70353ead85a0912c/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/open-drawer-from-missed-handle/70353ead85a0912c/runs.jsonl",
+      "sha256": "9f78e93820a2a4255e1343608eed0bd62193ea853c17ffd84e2d38b02b873e97"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/SKILL.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/SKILL.md",
+      "sha256": "b909a9e4bef33e02a5435567eced47176f297af55050213bd24ab7b2c52aa533"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/__init__.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/__init__.py",
+      "sha256": "bd083305558931f3ada55b25dec2b68f84bba2b75dc5ccb5d6994aa7529e89c3"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/geometry.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/geometry.py",
+      "sha256": "8df64ac3a985ef54dddbd141e973edd6b701ea30024985e7ffabe25bde008fdc"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/params.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/rgbd_surface_geometry/params.py",
+      "sha256": "243c7a0848759311d64c33ce85a898dbb6fb9ffe713a73a2fe4c018053fc8516"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/run.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/code/run.py",
+      "sha256": "8212763c041584171e01a454daff0a539756e8a3b67b5221d5b3e97ab3886e28"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/manifest.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/manifest.json",
+      "sha256": "085c3875dafde6c95cc7ca54a13e89b04d97415a9407c4873107f571d57a7c1f"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/policy.py",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/policy.py",
+      "sha256": "8212763c041584171e01a454daff0a539756e8a3b67b5221d5b3e97ab3886e28"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/skills/rgbd-surface-geometry/5aa70d58296eb1b4/runs.jsonl",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/skills/rgbd-surface-geometry/5aa70d58296eb1b4/runs.jsonl",
+      "sha256": "82e6efd4dc14f6600d0548bc84315b81b80fd0e369faa99eb75c6b2aabb418e3"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/tasks/OpenDrawer-b8b71eee55e3/profile.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/tasks/OpenDrawer-b8b71eee55e3/profile.json",
+      "sha256": "bed5436d033261d21e27f00bc8de0ee2cce55215e6b6da21ca08abccd2575744"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/tasks/OpenDrawer-b8b71eee55e3/versions/d26cfc00c7c3763182913e3ab827c8c09271ffde4f163d2fdac25bb6c7fa8285.json",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/tasks/OpenDrawer-b8b71eee55e3/versions/d26cfc00c7c3763182913e3ab827c8c09271ffde4f163d2fdac25bb6c7fa8285.json",
+      "sha256": "bed5436d033261d21e27f00bc8de0ee2cce55215e6b6da21ca08abccd2575744"
+    },
+    {
+      "published": "examples/open_drawer/r4_candidates/versions/drawer-regrasp-and-open.md",
+      "source": "runs/opendrawer-campaign20-20261105/agent-r4-admission-followup/retained/OpenDrawer/versions/drawer-regrasp-and-open.md",
+      "sha256": "d8191c63976838cceb6464e75ac8d46428e98ca53370be33fb2a599bf0b3840e"
+    }
+  ]
+}

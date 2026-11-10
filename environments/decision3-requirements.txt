@@ -1,0 +1,9 @@
+# Install in a separate environment; do not merge with pi05's Transformers 4.53.2.
+transformers==5.17.0
+torch==2.7.1
+torchvision==0.22.1
+pillow
+opencv-python-headless
+safetensors
+accelerate
+-r decision3-acceleration-requirements.txt

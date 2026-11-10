@@ -1,0 +1,11 @@
+{
+  "reference_root": "/home/junwue/code/gpt_as_policy/hybrid_rollout/robocasa365",
+  "files": {
+    "robocasa_server/controller_adapter.py": "cf5b56539c7e8075451098c33244f488301cfa14257c02c7e31c4817b73181ad",
+    "robocasa_server/action_edit.py": "f541eab375db08a424fd9d11b46fdf2e773e2e154cba21b2c9c0955ce0f665c5",
+    "skill/context/eef_control.md": "c5e44c9cbb8165b78cd498429be29fb3079a4d7984276b07052ad5ab6bbf9f79",
+    "skill/context/action_edit.md": "acc6105bc11c2886daf9321d54995acb4b2dc7be026bbb449266da31f9c8cbb7",
+    "skill/context/records.md": "132ffad4be77593adaaa636a63da6d219be5a400b7dbb8821fd459226ac98d27"
+  },
+  "purpose": "Reference for measured OSC site control, gradual prefix edits, and evidence retrieval; no runtime import dependency."
+}

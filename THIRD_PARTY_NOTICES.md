@@ -1,0 +1,13 @@
+# Sources and dependencies
+
+The implementation references the user's `gpt_as_policy` RoboCasa integration and the public RPent/RAX designs. These are architectural references, not bundled frameworks.
+
+The recovery workspace and checked-stage workflow reference RAX branch `robodojo-behavior/native`, commit `16e75db0d0258a4870935d0c4b2402ab618db11d`: `agent_skills/auto-research/autonomous-control/SKILL.md`, `agent_skills/task/experience-memory/`, and immutable bundle handling in `services/controller/storage.py` / `supervisor.py`. RAX is Apache-2.0; its checkout and license remain in `/home/junwue/deps/rax-reference`. This project implements its own bounded VLA-recovery workflow rather than importing RAX services. Exact reference hashes are recorded in `docs/rax-reference.json`.
+
+The 2026-10-31 Python skill package implementation additionally follows RAX's `main` skill-library format at `db744f5950582c7c301f249192c0ed3c76517dd8` and `libero-pro/native` immutable bundles and supplied-context runtime at `1767412c5300b9358059ae6a39740c3c28d2b8b9`. In particular, `recovery_worker.py` adopts the private protocol file-descriptor pattern to separate native stdout from RPC. The implementation adapts these patterns to this project's existing Harness, budgets, verifier and sandbox; it does not vendor or run RAX controllers. The shared robot skill functions were extracted from this project's own historical policies. The new reference checkout is `/home/junwue/code/rax`; provenance is in `docs/rax-package-reference.json`, with upstream LICENSE and NOTICE retained in `docs/references/rax/`.
+
+`src/vla_agent/control.py` and `adapters/robocasa_control.py` adapt the controller scaling, measured OSC site frame and gradual SO(3) prefix-edit mathematics from the user's `hybrid_rollout/robocasa365/robocasa_server/controller_adapter.py` and `action_edit.py`. Tool guides adapt the control/evidence conventions in that project's `skill/context/`. The new runtime retains its own Decision routing, control authority, budgets and validation; it has no runtime import dependency on the reference project.
+
+π0.5 and its client are installed from `robocasa-benchmark/openpi` at commit `5a6beda9ff99da30b4e1b59320f6a32971d7c397` (Apache-2.0), based on Physical Intelligence OpenPI. Their source and licenses remain in the separate `/home/junwue/deps/openpi-robocasa` checkout. The standalone serving entry reconstructs the model/transforms from this pinned version without importing its simulator-dependent training configuration.
+
+Decision 3.0 model cards declare Apache-2.0. Its model weights are not bundled or downloaded in this project. Simulator assets and VLA checkpoints are not distributed here.

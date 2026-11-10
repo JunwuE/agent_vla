@@ -1,0 +1,126 @@
+# Development profile; Flora endpoint must be provisioned separately (see docs/framework-v2.md).
+environment:
+  kind: robocasa
+  source_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robocasa365
+  robosuite_path: /share/project/robot-rfm/robot-exp/usr/cjy/simulation/robosuite365
+  extra_python_paths:
+  - /share/project/robot-rfm/robot-exp/usr/cjy/simulation_tools
+  library_path: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/lib
+  renderer: osmesa
+  rpc_timeout_seconds: 180.0
+  python: /share/project/robot-rfm/robot-exp/usr/cjy/envs/robocasa365/bin/python
+  task_name: CloseToasterOvenDoor
+  instruction_source: environment
+  scene_split: target
+  task_group: atomic_seen
+  seed: 7
+  enable_depth: true
+  camera_size: 256
+vla:
+  kind: pi05
+  endpoint: ws://127.0.0.1:8010
+  timeout_seconds: 120.0
+  action_layout: base_first
+  state_layout: base_first
+  binary_encoding: signed
+  clip_actions: true
+  image_size: 256
+  expected_contract: vla-agent.omnisf.mobile12.v1
+  openpi_path: /home/junwue/code/omnisf
+  python: /home/junwue/envs/pi05/bin/python
+  checkpoint: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999
+  norm_stats: /share/project/robot-rfm/robot-exp/usr/ejw/posttrain/outputs/omnisf_atomic/checkpoints/robocasa365_target_atomic/robocasa365_atomic_noalign_4gpu_20261025T081627Z/59999/assets/robocasa365_target_atomic/norm_stats.json
+  normalization: quantile
+  training_config: robocasa365_target_atomic
+decision:
+  kind: flora
+  timeout_seconds: 20.0
+  interval_steps: 50
+  max_age_seconds: 30.0
+  max_age_steps: 50
+  flora:
+    window_steps: 200
+    max_calls: 20
+    low_score: 2
+    high_score: 4
+    low_checks: 2
+    plateau_checks: 3
+    drop_points: 2
+    review_cooldown_steps: 150
+planner:
+  kind: codex
+  codex_command: /home/junwue/tools/bin/codex
+  max_tool_calls: 32
+  compact_context: false
+  preserve_initial_instruction: true
+  window_frames: 5
+  endpoint: https://api.openai.com/v1/responses
+  model: gpt-6-astra
+  api_key_env: OPENAI_API_KEY
+  reasoning_effort: high
+  timeout_seconds: 300.0
+  max_calls: 16
+  max_turns_per_intervention: 6
+  max_output_tokens: 4096
+flora:
+  enabled: true
+  endpoint: http://127.0.0.1:8030/v1/outcome
+  model: nvidia/Flora-Rewarder
+  revision: 031299e46e452fc0cedb4e0975eb9fa95fc37783
+  python: /home/junwue/envs/flora/bin/python
+  cameras:
+  - left
+  - wrist
+  timeout_seconds: 60
+  max_calls: 4
+  max_segment_steps: 3000
+  max_segment_seconds: 120
+  with_rationale: false
+runtime:
+  experiment_label: close-toaster-flora50-native-budget
+  supervision_enabled: true
+  initial_planning: true
+  nonblocking_review: true
+  max_reviews: 12
+  review_max_age_steps: 100
+  review_max_age_seconds: 120.0
+  allowed_interventions:
+  - continue
+  - refine
+  - switch
+  - replan
+  - code
+  - observe
+  - stop
+  max_steps: 450
+  max_wall_seconds: 1800
+  chunk_steps: 5
+  max_interventions: 8
+  max_no_progress_interventions: 3
+  recovery_seconds: 90
+  recovery_steps: 150
+  recovery_attempts: 4
+  recovery_total_steps: 450
+  recovery_total_seconds: 300
+  stagnation_steps: 10  # Minimum samples; the time window below is also required.
+  stagnation_enabled: true
+  stagnation_scope: eef_translation
+  stagnation_seconds: 2.0
+  stagnation_position_m: 0.01
+  stagnation_rotation_rad: 0.05
+  stagnation_gripper_m: 0.001
+  stagnation_command_threshold: 0.05
+  stagnation_cooldown_seconds: 4.0
+  memory_mode: accumulate
+  skill_library: skills
+  audit_interval_steps: 0
+  recovery_sandbox: landlock
+  experience_library: memory/close_toaster/experiences
+task:
+  instruction: Close the toaster oven door.
+  subtasks:
+  - name: close_toaster_door
+    instruction: Close the toaster oven door.
+    completion_condition: task_success
+  robot: PandaOmron
+  language_catalog: []

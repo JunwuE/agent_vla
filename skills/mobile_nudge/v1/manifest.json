@@ -1,0 +1,67 @@
+{
+  "id": "mobile_nudge",
+  "version": "v1",
+  "sha256": "518cbc57d8c209e9c4ed47bd1524959a3f30416914c1c0ba9344c8e1600cd217",
+  "robot": "PandaOmron",
+  "status": "template",
+  "description": "Short normalized mobile base/torso correction while holding desired arm goal.",
+  "preconditions": [],
+  "completion_condition": null,
+  "required_capabilities": [
+    "osc_eef",
+    "mobile_base"
+  ],
+  "parameter_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "motion": {
+        "maxItems": 4,
+        "minItems": 4,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "title": "Motion",
+        "type": "array"
+      },
+      "gripper_closed": {
+        "title": "Gripper Closed",
+        "type": "boolean"
+      },
+      "steps": {
+        "default": 1,
+        "maximum": 5,
+        "minimum": 1,
+        "title": "Steps",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "motion",
+      "gripper_closed"
+    ],
+    "title": "MobileRequest",
+    "type": "object"
+  },
+  "parameter_sources": [
+    "current measured OSC site pose",
+    "planner task evidence"
+  ],
+  "known_failures": [
+    "No collision or IK feasibility guarantee",
+    "Tracking does not establish object interaction success",
+    "Requires a separately installed completion verifier"
+  ],
+  "evidence": [],
+  "layout": null
+}

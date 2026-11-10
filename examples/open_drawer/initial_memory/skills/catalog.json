@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "id": "drawer-pull-from-handle-hold",
+      "robot": "PandaOmron",
+      "description": "OpenDrawer | Reuse measured geometry with the matching entry condition; candidate evidence only.",
+      "versions": [
+        {
+          "storage_id": "drawer-pull-from-handle-hold",
+          "version": "95bf87d8c3414ad4",
+          "when_to_use": "Persistent closed-command hold at a selected drawer handle with reliable visible planar drawer front, before secure grasp is established. Development replay outcome: SUBTASK_DONE"
+        }
+      ]
+    },
+    {
+      "id": "drawer-regrasp-and-open",
+      "robot": "PandaOmron",
+      "description": "OpenDrawer | Reuse measured geometry with the matching entry condition; candidate evidence only.",
+      "versions": [
+        {
+          "storage_id": "open-drawer-from-misaligned-handle",
+          "version": "7b695da7a1fcfd36",
+          "when_to_use": "Open empty gripper stalled outside a visible horizontal drawer bar; selected current RGB-D bar and face regions are reliable. Development replay outcome: Bounded pose convergence failed"
+        },
+        {
+          "storage_id": "open-drawer-from-misaligned-open-gripper",
+          "version": "0ed2fc3427424179",
+          "when_to_use": "Visible horizontal drawer handle with open gripper stalled below it; stationary base and measured RGBD. Development replay outcome: SUBTASK_DONE"
+        },
+        {
+          "storage_id": "open-drawer-from-missed-grasp",
+          "version": "7766677d945ef0ca",
+          "when_to_use": "Withdrawn empty gripper below a closed drawer with visible horizontal handle end surfaces; fixed base and aligned metric depth. Development replay outcome: SUBTASK_DONE"
+        },
+        {
+          "storage_id": "open-drawer-from-missed-handle",
+          "version": "70353ead85a0912c",
+          "when_to_use": " Development replay outcome: Unresolved: Stage failed to converge within action bound"
+        }
+      ]
+    }
+  ]
+}
